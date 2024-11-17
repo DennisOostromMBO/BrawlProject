@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brawlers</title>
+    <link href="/css/main.css" rel="stylesheet">
     <link href="/css/brawler.css" rel="stylesheet">
 </head>
 <body>
+    <x-navbar />
+
     <h1>List of Brawlers</h1>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
@@ -24,12 +27,12 @@
                     <td>{{ $brawler->rarity }}</td>
                     <td>{{ $brawler->role }}</td>
                     <td>
-                    @if ($brawler->picture)
-                        <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 70px; height: 100%;">
-                    @else
-                        No image available
-                    @endif
-                </td>
+                        @if ($brawler->picture)
+                            <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 70px; height: 100%;">
+                        @else
+                            No image available
+                        @endif
+                    </td>
                 </tr>
             @endforeach
         </tbody>

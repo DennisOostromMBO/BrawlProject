@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BrawlController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('brawl.index'); 
 });
 
 Route::get('/brawl', [BrawlController::class, 'index'])->name('brawl.index');
