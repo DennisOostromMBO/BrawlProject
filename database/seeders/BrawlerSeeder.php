@@ -17,10 +17,24 @@ class BrawlerSeeder extends Seeder
         ]);
 
         Brawler::create([
+            'name' => 'Nita',
+            'rarity' => 'Trophy road',
+            'role' => 'Damage dealer',
+            'picture' => '/images/brawlers/nita.png',
+        ]);
+
+        Brawler::create([
             'name' => 'Colt',
-            'rarity' => 'Common',
+            'rarity' => 'Trophy road',
             'role' => 'Damage Dealer',
             'picture' => '/images/brawlers/colt.png',
+        ]);
+
+        Brawler::create([
+            'name' => 'Bull',
+            'rarity' => 'Trophy road',
+            'role' => 'Tank',
+            'picture' => '/images/brawlers/bull.png',
         ]);
     }
 }

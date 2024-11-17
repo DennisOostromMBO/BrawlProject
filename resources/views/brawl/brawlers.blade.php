@@ -10,6 +10,7 @@
 <body>
     <x-navbar />
     <h1>List of Brawlers</h1>
+    <a href="{{ route('brawl.index') }}">Back to homepage</a>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
@@ -36,6 +37,5 @@
             @endforeach
         </tbody>
     </table>
-    <a href="{{ route('brawl.index') }}">Back to homepage</a>
 </body>
 </html>
