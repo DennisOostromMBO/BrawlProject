@@ -14,6 +14,7 @@
                 <th>Name</th>
                 <th>Rarity</th>
                 <th>Role</th>
+                <th>Picture</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +23,13 @@
                     <td>{{ $brawler->name }}</td>
                     <td>{{ $brawler->rarity }}</td>
                     <td>{{ $brawler->role }}</td>
+                    <td>
+                    @if ($brawler->picture)
+                        <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 70px; height: 100%;">
+                    @else
+                        No image available
+                    @endif
+                </td>
                 </tr>
             @endforeach
         </tbody>

@@ -13,12 +13,14 @@ class BrawlerSeeder extends Seeder
             'name' => 'Shelly',
             'rarity' => 'Starter',
             'role' => 'Damage Dealer',
+            'picture' => '/images/brawlers/shelly.png',
         ]);
 
         Brawler::create([
             'name' => 'Colt',
             'rarity' => 'Common',
             'role' => 'Damage Dealer',
+            'picture' => '/images/brawlers/colt.png',
         ]);
     }
 }

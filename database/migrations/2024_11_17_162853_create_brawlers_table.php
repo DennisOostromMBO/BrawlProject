@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name'); 
             $table->string('rarity'); 
             $table->string('role'); 
+            $table->string('picture');
             $table->timestamps(); 
         });
     }
