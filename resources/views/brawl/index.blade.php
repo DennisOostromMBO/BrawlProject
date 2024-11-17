@@ -8,7 +8,7 @@
     <link href="/css/index.css" rel="stylesheet">
 </head>
 <body>
-<x-navbar />
+    <x-navbar />
     <h1 class="title">Brawl<span>Zone</span></h1>
     <a href="{{ route('brawl.brawlers') }}">See all Brawlers</a>
 </body>
