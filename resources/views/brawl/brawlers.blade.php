@@ -9,7 +9,7 @@
 </head>
 <body>
     <x-navbar />
-    <h1>List of Brawlers</h1>
+    <h1>List of Brawlers global release</h1>
     <a href="{{ route('brawl.index') }}">Back to homepage</a>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
@@ -28,7 +28,7 @@
                     <td>{{ $brawler->role }}</td>
                     <td>
                         @if ($brawler->picture)
-                            <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 70px; height: 100%;">
+                            <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 50px; height: 100%;">
                         @else
                             No image available
                         @endif
