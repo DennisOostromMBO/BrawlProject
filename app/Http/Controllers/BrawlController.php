@@ -19,10 +19,5 @@ class BrawlController extends Controller
         $brawlers = Brawler::all(); 
         return view('brawl.brawlers', compact('brawlers')); 
     }
-
-    public function login()
-    {
-        return view('brawl.login');
-    }
 }
 
