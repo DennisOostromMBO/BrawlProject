@@ -9,3 +9,4 @@ Route::get('/', function () {
 
 Route::get('/brawl', [BrawlController::class, 'index'])->name('brawl.index');
 Route::get('/brawl/brawlers', [BrawlController::class, 'brawlers'])->name('brawl.brawlers');
+Route::get('/brawl/login', [BrawlController::class, 'login'])->name('brawl.login');
