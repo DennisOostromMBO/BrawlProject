@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brawlers</title>
     <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/brawler.css" rel="stylesheet">
+    <link href="/css/brawlers.css" rel="stylesheet">
 </head>
 <body>
     <x-navbar />
     <h1>List of Brawlers global release</h1>
+    <h3 class="press">Press on a image to see all Brawler stats</h3>
     <a href="{{ route('brawl.index') }}">Back to homepage</a>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>

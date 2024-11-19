@@ -1,3 +1,7 @@
-h1{
-    color: blue;
+
+.press, h1{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
