@@ -12,6 +12,11 @@ Route::get('/', function () {
 Route::get('/brawl', [BrawlController::class, 'index'])->name('brawl.index');
 Route::get('/brawl/brawlers', [BrawlController::class, 'brawlers'])->name('brawl.brawlers');
 
+// Update the stats route to include the brawler's ID
+Route::get('/brawl/brawlers/{id}/stats', [BrawlController::class, 'stats'])->name('brawl.brawlers.stats');
+;
+
+
 //register routes
 Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
 Route::post('/register', [RegisteredUserController::class, 'store']);
