@@ -10,5 +10,11 @@ class Stats extends Model
         'HP',
         'Damage',
         'Starpower',
+        'brawler_id', 
     ];
+
+    public function brawler()
+    {
+        return $this->belongsTo(Brawler::class);
+    }
 }

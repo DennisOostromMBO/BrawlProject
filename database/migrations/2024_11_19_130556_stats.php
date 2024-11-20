@@ -9,17 +9,19 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('stats', function (Blueprint $table) {
-            $table->id(); 
-            $table->string('HP'); 
-            $table->string('Damage'); 
-            $table->string('Starpower'); 
-            $table->timestamps(); 
+            $table->id();
+            $table->unsignedBigInteger('brawler_id');
+            $table->integer('HP');
+            $table->integer('Damage');
+            $table->string('Starpower');
+            $table->timestamps();
+    
+            $table->foreign('brawler_id')->references('id')->on('brawlers')->onDelete('cascade');
         });
     }
-
     /**
      * Reverse the migrations.
      */

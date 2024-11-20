@@ -1,5 +1,4 @@
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,15 +14,20 @@
 
     <p><strong>Rarity:</strong> {{ $brawler->rarity }}</p>
     <p><strong>Role:</strong> {{ $brawler->role }}</p>
-    <p><strong>Description:</strong> {{ $brawler->description }}</p>
-    <p><strong>HP:</strong> {{ $stats->HP }}</p>
+    @if ($brawler->stats)
+        <p><strong>HP:</strong> {{ $brawler->stats->HP }}</p>
+        <p><strong>Damage:</strong> {{ $brawler->stats->Damage }}</p>
+        <p><strong>Starpower:</strong> {{ $brawler->stats->Starpower }}</p>
+    @else
+        <p>No stats available for this brawler.</p>
+    @endif
+
     <td>
-                        @if ($brawler->picture)
-                                <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 100px; height: 100px;"> <br>
-                            </a>
-                        @else
-                            No image available
-                        @endif
-                    </td>
+        @if ($brawler->picture)
+            <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 100px; height: 100px;">
+        @else
+            No image available
+        @endif
+    </td>
 </body>
 </html>

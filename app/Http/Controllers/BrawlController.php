@@ -20,10 +20,10 @@ class BrawlController extends Controller
 
     public function stats($id)
     {
-        $brawler = Brawler::findOrFail($id); 
-        // Geef de juiste view door (brawl.stats in plaats van brawl.brawlers.stats)
+        $brawler = Brawler::with('stats')->findOrFail($id);
         return view('brawl.stats', compact('brawler'));
     }
+    
 }
 
 

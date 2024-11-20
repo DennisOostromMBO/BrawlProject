@@ -10,6 +10,13 @@ class Brawler extends Model
         'name',
         'rarity',
         'role',
+        'picture',
     ];
+
+    public function stats()
+    {
+        return $this->hasOne(Stats::class, 'brawler_id');
+    }
 }
+
 
