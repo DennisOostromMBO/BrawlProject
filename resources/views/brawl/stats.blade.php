@@ -16,6 +16,7 @@
     <p><strong>Rarity:</strong> {{ $brawler->rarity }}</p>
     <p><strong>Role:</strong> {{ $brawler->role }}</p>
     <p><strong>Description:</strong> {{ $brawler->description }}</p>
+    <p><strong>HP:</strong> {{ $stats->HP }}</p>
     <td>
                         @if ($brawler->picture)
                                 <img src="{{ asset($brawler->picture) }}" alt="{{ $brawler->name }}" style="width: 100px; height: 100px;"> <br>
