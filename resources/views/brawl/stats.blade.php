@@ -15,8 +15,8 @@
     <p><strong>Rarity:</strong> {{ $brawler->rarity }}</p>
     <p><strong>Role:</strong> {{ $brawler->role }}</p>
     @if ($brawler->stats)
-        <p><strong>HP:</strong> {{ $brawler->stats->HP }}</p>
-        <p><strong>Damage:</strong> {{ $brawler->stats->Damage }}</p>
+        <p><strong>Damage level 9:</strong> {{ $brawler->stats->Damage }}</p>
+        <p><strong>HP level 9:</strong> {{ $brawler->stats->HP }}</p>
         <p><strong>Starpower:</strong> {{ $brawler->stats->Starpower }}</p>
     @else
         <p>No stats available for this brawler.</p>
