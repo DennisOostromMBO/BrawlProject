@@ -23,6 +23,11 @@ class BrawlController extends Controller
         $brawler = Brawler::with('stats')->findOrFail($id);
         return view('brawl.stats', compact('brawler'));
     }
+
+    public function game()
+    {
+        return view('brawl.game');
+    }
     
 }
 
