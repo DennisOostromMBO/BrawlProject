@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h2>Which Brawler are you ???</h2>
-        <img src="image/box.jpg" alt="item-block">
+        <img src="{{ asset('images/Boxes/box.jpg') }}" alt="item-block">
         <h4>smash to open!</h4>
     </div>
 </body>
